@@ -22,7 +22,7 @@ ACUMEN is played best with larger periods of time in order to be absorbed into t
 
 In addition, approximately 1% of Australian players are nonbinary (IGEA 2021:17) and 57% of players call for more gender diveristy in video games (IGEA 2021:56). The protagonist Nyx is nonbinary, which would likely bring in players who otherwise wouldn’t play similar games, as gender diversity is important representation that people would be excited to see.
 
-## A description of the game setting/ story
+## A description of the game setting/story
 The world is intentionally left vague – the premise of the game begins in an escape room scenario, with puzzles to solve and people to learn about. However as the game progresses, items and hints from NPCs reveal the truth about where they are – every character has been dead since the start, and Nyx’s relationship with each NPC dictates their fate.
 
 Nyx is an interesting protagonist as they play into the amnesiac trope, unable to remember much before waking up in the building. In the end they turn out to be the “judge” of the fates of the NPCs, and have been for many iterations of this world. That’s where the name of the game comes from – “acumen” meaning the ability to make judgements and quick decisions.
@@ -98,7 +98,7 @@ Each NPC has a trust level that determines how they interact with Nyx, adding an
 ### Storyboard
 The storyboard shows the rough idea of Nyx waking up, solving a puzzle and talking to the NPCs and collecting information on their files.
 
-<img src="./readme_images/storyboard.png">
+<img src="./readme_images/storyboard.jpg">
 
 _read left to right ; top row first :)_
 
@@ -146,6 +146,7 @@ UI messages display to prompt the user when they are in range of an item, and to
 <img src="./readme_images/fig6.png">
  
 **_Inventory system features_**
+
 Clicking on the inventory to open it, the player can access information about items by hovering the mouse pointer over that inventory slot. They can interact with them if they are ‘usable’. In this room, only the code box is usable. Clicking the code box opens up a custom code box UI.
 
 <img src="./readme_images/fig7.png">
@@ -161,6 +162,7 @@ They can then proceed to the next area by walking to Room 2.
 <img src="./readme_images/fig9.png">
  
 ### Level 1, Room 2
+
 After walking to Room 2 there are NPCs who can be talked to.
 
 This room showcases the dialogue system, which is not needed to solve the door puzzle but the player can get a hint.
@@ -168,6 +170,7 @@ This room showcases the dialogue system, which is not needed to solve the door p
 <img src="./readme_images/fig10.png">
 
 ***Dialogue system features***
+
 The Dialogue system UI will update the UI when the player learns an NPC’s name.
 
 <img src="./readme_images/fig11.png">
@@ -226,18 +229,31 @@ In the final version of this game, the colour sequence should be randomised each
 Completing the puzzle opens the door and finishes the prototype game.
 
 ## Detail of the Technical Design
+
 ### Requirements Analysis
+
 1.	Technical hardware
+
 The game is intended for use on PCs with possible future console ports. Since the art and gameplay style are both simplistic, the requirements for graphics, CPU and RAM will all be quite light and it should be playable on all modern PCs.
+
 2.	Technical software: engine
+
 We selected the Unity engine as the programmer had experience working with this engine before, and it is suitable for a game with puzzle mechanics such as ACUMEN. It is also more accessible than other game engines used in this genre such as RPG Maker, as it has a free entry-level option.
+
 3.	System intelligence
+
 The game does not require the use of AI, as the puzzles in the game will consist of using clues found in the game world, help from the NPCs, and in some situations probability to deliver the player a unique game experience each playthrough.
+
 4.	Data management/ support
+
 Player data will be saved in a JSON format locally to the player’s PC or console memory device, or on any cloud service provided by stores where the game is sold (such as Steam’s).
+
 ### 2D/ 3D graphics
+
 This game is a 2D game with a simple, top down style. All game entities will be 2D, with simple material textures for the sprites.
+
 ### Animations
+
 The game characters (Nyx and the NPCs) will be hand animated through the use of the sprites, with animations for idling, walking, and reactions during conversations. This is essential for the theme of empathy, as the game aims for the player to connect emotionally with the characters. The camera will be animated during cutscenes staged at major events in the story, but will not be part of the main game play. These scenes will use hand drawn art to illustrate the NPC reactions in more detail, so sprite animation is not necessary. The camera animation will be created through Unity’s built in system.
 ## References
 Bark Bark Games (2022) _[House](https://barkbarkgames.itch.io/house) [online]_ itch.io, accessed 27th March, 2022.
@@ -311,36 +327,23 @@ Furthermore, our protagonist is from an underrepresented group (nonbinary people
 |Key puzzle: Player must determine how to use objects in the room to open the door. Memorisation puzzle: Players must memorise a pattern or sequence to be allowed to proceed. Negotiations: Players must choose dialogue options to side with NPCS.|The ability to solve puzzles will depend on the player’s trust levels with particular NPCs. They will give hints if Nyx initiates dialogue with them before finding the key. Negotiations will depend on the amount of time the player invests in getting to know the NPCs, as they may be able to learn things to avoid losing trust with certain NPCs.|Some of the timed puzzles may make the player feel stressed. They may also feel pressure as certain NPCs lose trust and turn against them. |
 
 #### User testing
-Description of user element to be tested|Testing method|Plans for testing|Outcomes
-Determination of socialisers, explorers player roles for usage preferences
-|Character theory (Bartle)|A small pilot beta test of the game will be made available, and a survey using a combination of Likert and open ended questions will be used. Should the initial survey yield useful data, beta testing will expand to gain more data. Open ended answers will be used to generate information about play styles. This will be added to the explorer role, which is expected based on the lore heavy nature of the game.|Some players will enjoy reading the text describing items and interacting with NPCs to learn more about them.
-Determining other possible playstyles beyond Bartle’s theory|Player types generated by coding user surveys from beta testing||We expect some players will enjoy working with certain NPCs, others will enjoy trying to find a dominant strategy, and we hope to learn more goals for players in the game. 
+|Description of user element to be tested|Testing method|Plans for testing|Outcomes|
+|-----|------|-----|-----|
+|Determination of socialisers, explorers player roles for usage preferences |Character theory (Bartle)|A small pilot beta test of the game will be made available, and a survey using a combination of Likert and open ended questions will be used. Should the initial survey yield useful data, beta testing will expand to gain more data. Open ended answers will be used to generate information about play styles. This will be added to the explorer role, which is expected based on the lore heavy nature of the game.|Some players will enjoy reading the text describing items and interacting with NPCs to learn more about them.|
+|Determining other possible playstyles beyond Bartle’s theory|Player types generated by coding user surveys from beta testing||We expect some players will enjoy working with certain NPCs, others will enjoy trying to find a dominant strategy, and we hope to learn more goals for players in the game. |
 
 #### System testing
 
-Description of system element to be tested|Testing method|Plans for testing|Outcomes
-Examining the usability of the game|Heuristic evaluation in line with PLAY|This will use a targeted survey consisting of Likert questions. It will be piloted during the beta testing and the questions refined for use during play testing on the near complete product before release. These questions will target the feedback, clarity of game elements, and seamlessness of experience in like with Category 3.|Players can describe elements of the game system that improve or hinder their engagement
+|Description of system element to be tested|Testing method|Plans for testing|Outcomes|
+|-----|------|-----|-----|
+|Examining the usability of the game|Heuristic evaluation in line with PLAY|This will use a targeted survey consisting of Likert questions. It will be piloted during the beta testing and the questions refined for use during play testing on the near complete product before release. These questions will target the feedback, clarity of game elements, and seamlessness of experience in like with Category 3.|Players can describe elements of the game system that improve or hinder their engagement|
 
 #### Experience
-Description of experience element to be tested|Testing method|Plans for testing|Outcomes
-The experience of solving the puzzles in the game world. Player must be able to play without feeling bored.|Flow theory|This will be used to balance the giving of hints during game play to ensure the challenge does not overwhelm the player. This will be tested during the beta-testing section of the development.|If players describe their experience as frustrating, more hints will be added. If they complete the game too quickly, hints will be removed.
-The achievement system, particularly for the hidden item mechanic|Bartle’s Character
-Theory – Achievers|This will also include the addition of the achievements system, in line with Bartle’s Character theory. Surveys during playtesting in addition to statistics provided by the Steam (or other) platform will indicate which achievements are providing engagement.Gaining the achievements will be appealing to those with a “completionist” mindset, and strive to replay the game often to complete every possible achievement and view each NPC’s potential ending. The statistics collected by the game regarding replays will inform this.|Achievements may
-unlock rare interactions
-with certain NPCs,
-along with completing
-certain side quests.
-Player must decide the paths for the
-NPCs and feel as if their decisions
-have a real impact on the path of the
-game.
-|Bartle’s Character
-Theory – Socialisers|This impact will be measure using a range of things - questions during the surveys, statistics about the final NPCs present in the last level of the game, and social media interaction that mentions the NPCs. Ideally, there should be a balance of interest in each NPC. Less interest indicates an NPC who needs more character development (lore) or balancing.|By the true ending of the game,
-only four NPCs will remain (along
-with Nyx).
-These NPCs will be ones that the
-player has interacted with in
-certain ways and built trust with.
+|Description of experience element to be tested|Testing method|Plans for testing|Outcomes|
+|-----|------|-----|-----|
+|The experience of solving the puzzles in the game world. Player must be able to play without feeling bored.|Flow theory|This will be used to balance the giving of hints during game play to ensure the challenge does not overwhelm the player. This will be tested during the beta-testing section of the development.|If players describe their experience as frustrating, more hints will be added. If they complete the game too quickly, hints will be removed.|
+|The achievement system, particularly for the hidden item mechanic|Bartle’s Character Theory – Achievers|This will also include the addition of the achievements system, in line with Bartle’s Character theory. Surveys during playtesting in addition to statistics provided by the Steam (or other) platform will indicate which achievements are providing engagement.Gaining the achievements will be appealing to those with a “completionist” mindset, and strive to replay the game often to complete every possible achievement and view each NPC’s potential ending. The statistics collected by the game regarding replays will inform this.|Achievements may unlock rare interactions with certain NPCs, along with completing certain side quests.|
+|Player must decide the paths for the NPCs and feel as if their decisions have a real impact on the path of the game. |Bartle’s Character Theory – Socialisers|This impact will be measure using a range of things - questions during the surveys, statistics about the final NPCs present in the last level of the game, and social media interaction that mentions the NPCs. Ideally, there should be a balance of interest in each NPC. Less interest indicates an NPC who needs more character development (lore) or balancing.|By the true ending of the game, only four NPCs will remain (along with Nyx). These NPCs will be ones that the player has interacted with in certain ways and built trust with.|
 
 #### References:
 Desurvire H and Wiberg C (2009) Game Usability Heuristics (PLAY) for Evaluating and Designing Better Games: The Next Iteration, Conference: Online Communities and Social Computing, Third International Conference, OCSC 2009, DOI:10.1007/978-3-642-02774-1_60.
