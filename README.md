@@ -82,7 +82,7 @@ The audio design is quite simple. The music is calm ambiance, reflecting the roo
 ###  Concept art
 _First iteration of Nyx’s walk cycle, later updated to be smoother._
 
-<img src="./readme_images/nyx.gif">
+<img src="./readme_images/nyx.gif" width="300px">
 
 ### Reference Art
 
