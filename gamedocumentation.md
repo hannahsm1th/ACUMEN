@@ -1,3 +1,7 @@
+# ACUMEN
+
+by Mars Spanninga and Hannah Smith
+
 ## Concept Summary:
 
 ACUMEN is a story-based psychological RPG available on PC where you play as Nyx, a university student who awakens in a bizarre place – brick walls, concrete floor, and the sickening smell of an overuse of cleaning products. As they struggle to regain their composure and what little memory they have, the silhouettes of other people begin to appear. Soon, they learn the others are in a similar situation – no memory, a little pain and, most of all, an overwhelming panic when no escape becomes evident. You play through puzzles and crack riddles to find an exit, learning more about the people who now surround you.
@@ -52,7 +56,9 @@ As the game features exploration as one of the main goals, achievements will be 
 The gameplay is simple and so there will not be multiple modes of play and there is no need for a tutorial. Placing a simple game controls guide somewhere in the game menu will handle players who need help understanding the controls. The UI system currently displays messages in addition to the use of a standard set of controls (WASD for movement with a mouse click to interact with the UI).
 
 Since the story will be long, the game will have a save file feature allowing players to save their progress and continue at a later time. There will be the capacity for multiple save files so players can save before difficult puzzles or return to an earlier point in the story should they wish to.
+
 ## Worksheet summary
+
 ### Feedback and internal economy worksheet
 We used this worksheet to explicitly describe the relationships between story progression and the internal game economy. This allowed us to build the narrative with consideration for game balancing and the flow of the various resources.
 
@@ -64,7 +70,8 @@ Positive and negative feedback is mainly provided by the NPCs as some NPCs have 
 
 This worksheet was used to determine how our game will meet the needs of the players to feel engaged, challenged, and other needs according to their player type. We used this worksheet to determine a schedule and action plan for user testing to ensure our final game product is balanced and provides an engaging experience for all players.
 
-## A description of the Art Design (visual and audio)
+## Art Design (visual and audio)
+
 ### Visual direction
 The game is in a 8-bit style, especially the character sprites. The feel is not quite trying to emulate older style games, but arcade games definitely have an influence as seen in the pixel art style. Key art influences for ACUMEN are Undertale, House and Your Turn To Die.
 ### Environment description
@@ -113,7 +120,7 @@ The menu will consist of the game title displayed above text buttons on a black 
 
 The game is designed to be played on PC with a combination of keyboard controls for movement and interaction with the game world, and clicking to complete puzzle mechanics or interact with the UI. It will be possible to port the game to game consoles, but not mobile games due to the game mechanics. The player will control a sprite for their avatar (viewable above in the Design section), since this is an RPG game. This will allow the player an immersive experience in the game world, and to develop an emotional connection with the avatar.
 
-### Level design
+## Level design
 The level design completed for the prototype covers most of the core gameplay for the final product, with the exception of the level-end cutscenes where Nyx makes decisions.
 ### Menu
  The prototype menu is shown here with the option to play a game or quit. It showcases the art style (simple, pixel art created by our art designer) and the atmosphere created by the use of mysterious music (open source). It doesn’t yet feature the save/load system.
@@ -220,7 +227,7 @@ In the final version of this game, the colour sequence should be randomised each
 
 Completing the puzzle opens the door and finishes the prototype game.
 
-## Detail of the Technical Design
+## Technical Design
 
 ### Requirements Analysis
 
@@ -299,15 +306,18 @@ _Describe your game in terms of fairness? What attributes (feedback, mechanics, 
 The game uses the positive and negative feedback mechanisms to ensure that the players experience the game as fair. This help comes in the form of information (hints) and interventions in puzzles to make the difficulty lower. For example, during a memorisation puzzle an NPC will assist Nyx by sharing some of the pattern that needs to be memorised. It is beyond the scope of this project, but there are plans to implement timer-based assistance from the system in addition to the help from the NPCs. This ensures that players do not experience stagnation too often in the game.
 
 _Are the feedback mechanisms described above well placed throughout the game?_
+
 This will need to be playtested as each level and puzzle is built. In each level there will be opportunities to raise trust with NPCs and gain their help, which will sometimes come at the cost of losing trust with another NPC with a differing opinion.
 Describe your game in terms of stability? What attributes (feedback, mechanics, action) make it stable?
 The first puzzle is easy, allowing the player to learn the basic game mechanics in a low-pressure environment. As the game progresses and the player earns more trust, they will receive more help from the NPCs they have earned trust. A player that does not build trust with any NPCs is also has a valid playstyle, although the puzzles will be more challenging.
 
 _How are resources managed for each player? Are the feedback mechanisms described above well placed throughout the game?_
+
 The tangible resources (puzzle items and NPCs’ lost objects) are pre-determined in terms of placement in the game world. The economy is closed, with no way to generate new resources. This will allow us to adjust the balance quickly in response to playtesting by adding or removing items as necessary. In the long term plans (beyond the scope of the prototype) to implement a hidden items mechanic which will reward exploration.
 Describe your game in terms of engagement? What attributes (feedback, mechanics, action) make it engaging?
 
 _What considerations have been made for providing engagement as a component of a fair and balanced game? How are audio and visual cues used to provide information to the game player that may impact upon their fair and stable game experience?_
+
 Our consideration of player experience is based on the PLAY heuristics developed by Desurvire and Wiberg (2009) by focusing on using visceral, audio and visual content to create an immersive experience and emotional connection between the player and the game. The visceral connection is created by having the player control the protagonist’s avatar, and make interact with the in-game world to affect the story of the game. Some of these consequences will involve the deaths of NPCs. The audio content will use music to create a certain mood through auditory ambiance, using sad music after a death or tense music to make puzzle environments more immersive. The visual style is simple, to allow the player to project their own experience of the game world onto. 
 
 Furthermore, our protagonist is from an underrepresented group (nonbinary people) which will increase the novelty and interest in our game for players who enjoy diverse representation.
@@ -338,4 +348,4 @@ Furthermore, our protagonist is from an underrepresented group (nonbinary people
 |Player must decide the paths for the NPCs and feel as if their decisions have a real impact on the path of the game. |Bartle’s Character Theory – Socialisers|This impact will be measure using a range of things - questions during the surveys, statistics about the final NPCs present in the last level of the game, and social media interaction that mentions the NPCs. Ideally, there should be a balance of interest in each NPC. Less interest indicates an NPC who needs more character development (lore) or balancing.|By the true ending of the game, only four NPCs will remain (along with Nyx). These NPCs will be ones that the player has interacted with in certain ways and built trust with.|
 
 #### References:
-Desurvire H and Wiberg C (2009) Game Usability Heuristics (PLAY) for Evaluating and Designing Better Games: The Next Iteration, Conference: Online Communities and Social Computing, Third International Conference, OCSC 2009, DOI:10.1007/978-3-642-02774-1_60.
+Desurvire H and Wiberg C (2009) Game Usability Heuristics (PLAY) for Evaluating and Designing Better Games: The Next Iteration, Conference: Online Communities and Social Computing, _Third International Conference, OCSC 2009_, DOI:10.1007/978-3-642-02774-1_60.
