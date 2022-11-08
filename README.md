@@ -1,5 +1,7 @@
 # ACUMEN
 
+[demo video](https://youtu.be/gLOXC0f2m1w)
+
 <img src="./readme_images/fig3.png">
 
 This was a team game design project for a 2D psychological RPG game built in Unity by myself and my team mate Mars Spanninga, using an AGILE development approach.
